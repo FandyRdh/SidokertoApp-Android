@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyListJawaban1"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:paddingBottom="12dp"
+            >
+
+
+            <TextView
+                android:id="@+id/txt_DBS_NoSoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingTop="3dp"
+                android:text="No.1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_DBS_JenisPaket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingTop="3dp"
+                android:text="UTS"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.883"
+                app:layout_constraintStart_toEndOf="@+id/txt_DBS_NoSoal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_DBS_SoalUjian"
+                android:layout_width="331dp"
+                android:layout_height="66dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="3dp"
+                android:text="Bahasa Indonesia Bahasa Indonesia Bahasa Indonesia Bahasa Indonesia"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_DBS_NoSoal" />
+
+            <LinearLayout
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.038"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_DBS_SoalUjian">
+
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Pilihan Ganda (A) :"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSoalUjianJawaban" />
+
+                <TextView
+                    android:id="@+id/txt_DBS_Pilihan_1"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="JawabanSiswa"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtJawabanSiswa" />
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Pilihan Ganda (B) :"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_DBS_Pilihan_2"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="JawabanSiswa"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Pilihan Ganda (C) :"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_DBS_Pilihan_3"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="JawabanSiswa"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Pilihan Ganda (D) :"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_DBS_Pilihan_4"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="JawabanSiswa"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Jawaban Benar:"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_DBS_Pilihan_Kunci"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="JawabanSiswa"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

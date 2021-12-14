@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".Siswa.DetailUjianSiswa"
+    android:background="@drawable/background_v2"
+      android:padding="20dp">
+<!--  <ScrollView-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content">-->
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/quicksand_medium"
+      android:text="Ujian"
+      android:textColor="#FFFFFF"
+      android:textSize="33dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="572dp"
+      android:scrollbars="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.868"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView11"
+      app:layout_constraintVertical_bias="1.0">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="Judul Ujian"
+          android:textColor="#000" />
+
+      <TextView
+          android:id="@+id/txtNamaUjian1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:fontFamily="@font/poppins_regular"
+          android:text="masukan nim"
+          android:textColor="#000"
+          android:textStyle="bold" />
+      <!---->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Guru Pengajar"
+          android:textColor="#000" />
+
+      <TextView
+          android:id="@+id/txtNamaPengajar1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:fontFamily="@font/poppins_regular"
+          android:text="masukan nama"
+          android:textColor="#000"
+          android:textStyle="bold" />
+      <!---->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Mata Pelajaran"
+          android:textColor="#000" />
+
+      <TextView
+          android:id="@+id/txtNamaMapel1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:fontFamily="@font/poppins_regular"
+          android:text="masukan Alamat"
+          android:textColor="#000"
+          android:textStyle="bold" />
+      <!---->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Batas Waktu Ujian"
+          android:textColor="#000" />
+
+      <TextView
+          android:id="@+id/txtJadwalUjian1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:fontFamily="@font/poppins_regular"
+          android:text="masukan nim"
+          android:textColor="#000"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Jenis Ujian"
+          android:textColor="#000" />
+
+      <TextView
+          android:id="@+id/txtJenisUjianJawaban"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:fontFamily="@font/poppins_regular"
+          android:text="Jadwal"
+          android:textColor="#000"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/quicksand_bold"
+          android:text="Daftar Soal : "
+          android:textAlignment="center"
+          android:textColor="#000"
+          android:textSize="30sp"
+          android:textStyle="bold" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rv_BS"
+          android:layout_width="match_parent"
+          android:layout_height="1000dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+      android:id="@+id/linearLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingTop="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+<!--    <Button-->
+<!--        android:id="@+id/btnBaca"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Baca" />-->
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Selesai" />
+
+
+  </LinearLayout>
+  <!--  </ScrollView>-->
+  </androidx.constraintlayout.widget.ConstraintLayout >

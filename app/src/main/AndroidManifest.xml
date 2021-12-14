@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prakpm2.pa_sidokerto_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Sidokerto App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PA_Sidokerto_App">
+        <activity android:name=".Guru.addSoal"></activity>
+        <activity android:name=".Guru.DetailSoalGuru" />
+        <activity android:name=".Siswa.Ranking" />
+        <activity android:name=".Siswa.KonfirmasiMulaiUjian" />
+        <activity android:name=".Guru.DetailBankSoal" />
+        <activity android:name=".Guru.BankSoal" />
+        <activity android:name=".Siswa.DetailJawaban" />
+        <activity android:name=".Siswa.ProfileSiswa" />
+        <activity android:name=".Siswa.NilaiUjian" />
+        <activity android:name=".Siswa.HasilUjian" />
+        <activity android:name=".Siswa.DetailSoal" />
+        <activity android:name=".onboard_3" />
+        <activity android:name=".onboard_2" />
+        <activity android:name=".onboard_1" />
+        <activity android:name=".Siswa.DetailUjianSiswa" />
+        <activity android:name=".Siswa.UjianSiswa" />
+        <activity android:name=".DashboardSiswa" />
+        <activity android:name=".LoginMainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/Theme.Splash" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
